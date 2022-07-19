@@ -8,24 +8,31 @@
 </head>
 
 <body>
+
   <header> 
-  <img src="logo.png" width="150px" alt="150px">
+    <section>
+      <img id="logo" src="logo.png" width="150px" alt="150px">
+    </section>
+    <div class="content">
+      <p>SORPRENDETE CON OURZTORE</p>
+    </div>
+    <form id="button">
+      <button onclick="button()" class="button" id="button">Catálogo</button>
+    </form>
+  <!--
+    <a href="#">Ofertas</a>
+    <a href="#">Catálogo</a>
+    <a href="#">Contactanos</a>
+  -->
   </header>
 
-  <nav>
-    <ul>
-      <li>
-        <a href="#">Ofertas</a>
-        <a href="#">Catálogo</a>
-        <a href="#">Contactanos</a>
-      </li>
-    </ul>
-  </nav>
-
-  <article>
-   <div id="beginning"><img src="inicio.png.png" width="300px"  alt="300px"></div> 
- <div id="title"><h1>¡SORPRENDETE!</h1></div> 
  
+
+<!--<figure>
+  <div id="beginning"><img src="inicio.png.png" width="300px"  alt="300px"></div> 
+  <figcaption>!SORPRENDETE¡</figcaption>
+</figure> -->
+  <article> 
  <!--ARTICULOS A LA VENTA-->
 <section class="items">
   <div id="item1">
@@ -38,15 +45,16 @@
       <img src="articulo3.jpg" width="100px" alt="100px">
       </div>
 </section>
+
 <!--FORMULARIO TARJETA-->
 <section class="container">
   <form action="" class="form">
     <h2>INGRESA LOS DATOS</h2>
-    <input type="text" name="" id="" placeholder="Nombre">
-    <input type="password" name="" id="" placeholder="Número de la tarjeta">
-    <input type="date" name="" id="" placeholder="Fecha de vencimiento">
-    <input type="number" name="" id="" placeholder="CVV">
-    <input type="submit" value="Validar">
+    <input class="controls" type="text" name="Nombre" id="" placeholder="Nombre">
+    <input class="controls" type="password" name="numero_tarjeta" id="" placeholder="Número de la tarjeta">
+    <input class="controls" type="date" name="fv" id="" placeholder="Fecha de vencimiento">
+    <input class="controls" type="number" name="cvv" id="" placeholder="CVV">
+    <input class="validar" type="submit" value="Validar">
 
   </form>
 

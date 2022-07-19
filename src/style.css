@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color:#151a35 ;
+    font-family:'Calibri' ;
+    
+}
+
+header{
+    background: url(Inicio.oz.png);
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+    
+section{
+    min-width: 1000px;
+    margin: auto;
+    padding: 30px 0;
+
+}
+
+.content{
+    text-align: center;
+    
+}
+
+.content p{
+    font-size: 60px;
+    font-weight: bold;
+    margin: 1em 0;
+
+}
+
+/*.content a{
+    color:#e2e2e2;
+    text-decoration: none;
+    background: #151a35;
+    padding:4px 20px ;
+    border-radius: 30px;
+    font-size: 30px;
+    margin: 10px;
+
+
+}*/
+
+#button{
+    position: relative;
+    color: #151a35;
+    padding: 15px 32px;
+    text-align: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+}
+
+.items{
+    display: none;
+    text-align: center;
+    font-family: "calibri";
+}
+
+.container{
+    width: 400px;
+    background: #151a35;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: "calibri";
+    color: #ba9a96;
+}
+
+.container.h2{
+    font-size: 22px;
+    margin-bottom: 0px;
+    text-align: auto;
+}
+
+.controls{
+    width: 100%;
+    background: #ba9a96;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #886971;
+    font-family: "calibri";
+    font-size: 18px;
+}
+
+.validar{
+    width: 100%;
+    background: #886971 ;
+    border: none;
+    padding: 12px;
+    
+
+
+
+}
