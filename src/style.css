@@ -12,7 +12,7 @@ body{
 
 header{
     background: url(Inicio.oz.png);
-    height: 450px;
+    height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -49,21 +49,31 @@ section{
 
 }*/
 
-#button{
+.inicio{
     position: relative;
     color: #151a35;
-    padding: 15px 32px;
+    padding: 10px 32px;
     text-align: center;
     border: none;
     outline: none;
     cursor: pointer;
-
 }
 
-.items{
-    display: none;
+#items{
     text-align: center;
     font-family: "calibri";
+}
+
+.item1{
+    display: none;
+}
+
+.item2{
+    display: none;
+}
+
+.item3{
+    display: none;
 }
 
 .container{
@@ -99,8 +109,17 @@ section{
     background: #886971 ;
     border: none;
     padding: 12px;
+    color: #151a35;
+    margin: 16px 0;
+    font-size: 16px;
     
+}
 
+.container{
+    display: none;
+}
 
-
+footer{
+    text-align: center;
+    font-size: "calibri";
 }

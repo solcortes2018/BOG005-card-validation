@@ -16,9 +16,9 @@
     <div class="content">
       <p>SORPRENDETE CON OURZTORE</p>
     </div>
-    <form id="button">
-      <button onclick="button()" class="button" id="button">Catálogo</button>
-    </form>
+    <div>
+      <button class="inicio">Catálogo</button>
+    </div>
   <!--
     <a href="#">Ofertas</a>
     <a href="#">Catálogo</a>
@@ -32,17 +32,24 @@
   <div id="beginning"><img src="inicio.png.png" width="300px"  alt="300px"></div> 
   <figcaption>!SORPRENDETE¡</figcaption>
 </figure> -->
+
   <article> 
  <!--ARTICULOS A LA VENTA-->
-<section class="items">
-  <div id="item1">
+<section id="items">
+  <div class="item1">
   <img src="articulo1.jpg" width="100px" alt="100px">
+  <h1 class="nombre_articulo">Aretes espiral hojas</h1>
+  <span class="precio">$29.000</span>
   </div>
-  <div id="item1">
+  <div class="item1">
     <img src="articulo2.jpg" width="100px" alt="100px">
+    <h1 class="nombre_articulo">Topitos astronautas</h1>
+  <span class="precio">$19.000</span>
     </div>
-    <div id="item1">
+    <div class="item1">
       <img src="articulo3.jpg" width="100px" alt="100px">
+      <h1 class="nombre_articulo">Ear cuff cadena doble plateada</h1>
+  <span class="precio">$23.000</span>
       </div>
 </section>
 
@@ -50,10 +57,10 @@
 <section class="container">
   <form action="" class="form">
     <h2>INGRESA LOS DATOS</h2>
-    <input class="controls" type="text" name="Nombre" id="" placeholder="Nombre">
-    <input class="controls" type="password" name="numero_tarjeta" id="" placeholder="Número de la tarjeta">
-    <input class="controls" type="date" name="fv" id="" placeholder="Fecha de vencimiento">
-    <input class="controls" type="number" name="cvv" id="" placeholder="CVV">
+    <input class="controls" type="text" name="Nombre" id="nombre" placeholder="Nombre">
+    <input class="controls" type="text" name="numero_tarjeta" id="numero_tarjeta" placeholder="Número de la tarjeta">
+    <input class="controls" type="month" name="fv" step="5" min="2022-01" max="2030-12" value="2022/07" placeholder="Fecha de vencimiento">
+    <input class="controls" type="number" name="cvv" id="cvv" placeholder="CVV">
     <input class="validar" type="submit" value="Validar">
 
   </form>

@@ -1,15 +1,19 @@
 import validator from './validator.js';
 
 function products()
-document.getElementById('buttom')
+{  
+let productos= document.getElementById('inicio');
 
-var item1= (".item1")
-item1.style.display ="block"
+let item1= document.querySelector(".item1")
+item1.style.display ="block";
  
-var item2= (".item2")
-item2.style.display ="block"
+let item2= document.querySelector(".item2")
+item2.style.display ="block";
 
-var item3= (".item3")
-item3.style.display ="block"
+let item3= document.querySelector(".item3")
+item3.style.display ="block";
+}
+
+
 
 console.log(validator);
