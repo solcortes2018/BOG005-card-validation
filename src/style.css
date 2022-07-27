@@ -1,82 +1,154 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body{
-    color:#151a35 ;
-    font-family:'Calibri' ;
-    
+*{margin: 0;
+    padding: 0;
 }
 
 header{
-    background: url(Inicio.oz.png);
-    height: 500px;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-}
-    
-section{
-    min-width: 1000px;
-    margin: auto;
-    padding: 30px 0;
+    width: 100%;
+    margin-bottom:10px;
+    background: url(inicio.oz.png);
+    overflow: hidden;
+    font-size: large;
 
 }
 
-.content{
+ .container_inicio p {
     text-align: center;
-    
-}
-
-.content p{
+    font-family: "calibri";
     font-size: 60px;
-    font-weight: bold;
-    margin: 1em 0;
+    transition: 0.6s;
+    color:#151a35
+    
+ }
 
-}
-
-/*.content a{
-    color:#e2e2e2;
-    text-decoration: none;
-    background: #151a35;
-    padding:4px 20px ;
-    border-radius: 30px;
-    font-size: 30px;
-    margin: 10px;
-
-
-}*/
-
-.inicio{
-    position: relative;
-    color: #151a35;
-    padding: 10px 32px;
+ .container_inicio h1 {
+    padding-top: 10px;
+    padding-left: 15px;
+    text-shadow: #886971 5px 1px 4px;
     text-align: center;
-    border: none;
-    outline: none;
-    cursor: pointer;
-}
+    font-size: 60px;
+    transition: 0.6s;
+    color:#151a35
+
+ }
+
+  header nav {
+    position: relative;
+    display: flex;  
+    justify-content: right;
+    line-height: 200px;
+  }
+  
+  header nav a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color:#151a35;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    padding: 0px 2px;
+    
+  }
+  
+  
+  body{
+    background: #e2e2e2;
+    min-height: 200vh;
+    font-family:'Calibri' ;
+    
+  }
 
 #items{
     text-align: center;
     font-family: "calibri";
+    display:flex;
+    justify-content: center;
+    line-height: 20px;
+    
+
 }
 
+#items h1{
+    font-family: "calibri";
+    
+
+}
 .item1{
-    display: none;
+    padding: auto;
+    letter-spacing:1;
+    word-spacing: 1;
+    border: 1px dotted #151a35;
+    width: 60px;
+    margin: auto;
+    padding: 10%;
+  
 }
 
 .item2{
-    display: none;
+    padding: auto;
+    letter-spacing: 1;
+    word-spacing: 1;
+    border: 3px dotted #151a35;
+    width: 50px;
+    margin: auto;
+    padding:10%;
 }
 
 .item3{
-    display: none;
+    padding: auto;
+    letter-spacing: 1;
+    word-spacing: 1;
+    border: 1px dotted #151a35;
+    width: 50px;
+    margin: auto;
+    padding: 10%;
+    
 }
 
-.container{
+
+
+
+.nombre_articulo{
+    display: flex;
+    justify-content: center;
+    color: #151a35;
+    
+
+
+}
+.costo{
+    display: flex;
+    justify-content: center;
+    color: #151a35;
+}
+#agregar1{
+    background-color:#ba9a96;
+    height: 40px;
+    border-radius: 5px;
+    font-family: "calibri";
+    font-size: 12px;
+    padding: 4px 4px 4px 4px;
+}
+
+#agregar2{
+    background-color:#ba9a96;
+    height: 40px;
+    border-radius: 5px;
+    font-family: "calibri";
+    font-size: 12px;
+    padding: 4px 4px 4px 4px;
+}
+
+#agregar3{
+    background-color:#ba9a96;
+    height: 40px;
+    border-radius: 5px;
+    font-family: "calibri";
+    font-size: 12px;
+    padding: 4px 4px 4px 4px;
+}
+
+#container_formulario{
     width: 400px;
     background: #151a35;
     padding: 30px;
@@ -85,13 +157,11 @@ section{
     border-radius: 4px;
     font-family: "calibri";
     color: #ba9a96;
+    display: none;
+    
 }
 
-.container.h2{
-    font-size: 22px;
-    margin-bottom: 0px;
-    text-align: auto;
-}
+
 
 .controls{
     width: 100%;
@@ -104,7 +174,7 @@ section{
     font-size: 18px;
 }
 
-.validar{
+.pagar{
     width: 100%;
     background: #886971 ;
     border: none;
@@ -115,11 +185,22 @@ section{
     
 }
 
-.container{
-    display: none;
-}
+
 
 footer{
+    background: url(inicio.oz.png);
+    margin-top: 57px;
+    height: 55px;  
+    width: 100%;
+    
+}
+.redes{
+    font-family: "calibri";
+    font-size: 16px;
+    padding-top: 15px;
+    padding-left: 15px;
     text-align: center;
-    font-size: "calibri";
+    font-weight: bold;
+   letter-spacing: 5px;
+   justify-content: space-between;
 }

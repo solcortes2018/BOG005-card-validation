@@ -10,76 +10,71 @@
 <body>
 
   <header> 
-    <section>
-      <img id="logo" src="logo.png" width="150px" alt="150px">
-    </section>
-    <div class="content">
-      <p>SORPRENDETE CON OURZTORE</p>
+    <div class="container_inicio">
+      <img class="logo" src="logo.png" width="150px" alt="150px">
+      <h1>BIENVENIDOS A OURZTORE</h1>
+      <p>¡Sorprendete!</p>
     </div>
-    <div>
-      <button class="inicio">Catálogo</button>
-    </div>
-  <!--
-    <a href="#">Ofertas</a>
-    <a href="#">Catálogo</a>
-    <a href="#">Contactanos</a>
-  -->
+    <nav>
+      <a href="#ofertas">Ofertas</a>
+      <a href id="#catalogo">Catálogo</a>
+      <a href="#Contactanos">Contactanos</a>
+    </nav>
+      <!--<button class="inicio">Catálogo</button>-->
   </header>
 
  
 
-<!--<figure>
-  <div id="beginning"><img src="inicio.png.png" width="300px"  alt="300px"></div> 
-  <figcaption>!SORPRENDETE¡</figcaption>
-</figure> -->
-
-  <article> 
- <!--ARTICULOS A LA VENTA-->
+<main>
 <section id="items">
-  <div class="item1">
-  <img src="articulo1.jpg" width="100px" alt="100px">
-  <h1 class="nombre_articulo">Aretes espiral hojas</h1>
-  <span class="precio">$29.000</span>
-  </div>
-  <div class="item1">
-    <img src="articulo2.jpg" width="100px" alt="100px">
-    <h1 class="nombre_articulo">Topitos astronautas</h1>
-  <span class="precio">$19.000</span>
+ <!--ARTICULOS A LA VENTA-->
+    <div class="item1" >
+      <img src="articulo1.jpg" class="articulo1" width="100px" alt="100px">
+      <h2 class="nombre_articulo">Aretes espiral hojas</h2>
+      <p class="costo">$29.000</p>
+      <br>
+      <button id="agregar1">Agregar</button>
     </div>
-    <div class="item1">
-      <img src="articulo3.jpg" width="100px" alt="100px">
-      <h1 class="nombre_articulo">Ear cuff cadena doble plateada</h1>
-  <span class="precio">$23.000</span>
+    <div class="item1" >
+      <img src="articulo2.jpg" class="articulo1" width="100px" alt="100px">
+      <h2 class="nombre_articulo">Topitos astronautas</h2>
+      <p class="costo">$19.000</p>
+      <br>
+      <button id="agregar2">Agregar</button>
+    </div>
+    <div class="item1" >
+      <img src ="articulo3.jpg" class="articulo1" width="100px" alt="100px">
+      <h2 class="nombre_articulo">Ear cuff doble</h2>
+      <p class="costo">$23.000</p>
+      <br>
+      <button id="agregar3">Agregar</button>
       </div>
 </section>
 
 <!--FORMULARIO TARJETA-->
-<section class="container">
+<section id="container_formulario">
   <form action="" class="form">
     <h2>INGRESA LOS DATOS</h2>
+    <div>
     <input class="controls" type="text" name="Nombre" id="nombre" placeholder="Nombre">
-    <input class="controls" type="text" name="numero_tarjeta" id="numero_tarjeta" placeholder="Número de la tarjeta">
-    <input class="controls" type="month" name="fv" step="5" min="2022-01" max="2030-12" value="2022/07" placeholder="Fecha de vencimiento">
-    <input class="controls" type="number" name="cvv" id="cvv" placeholder="CVV">
-    <input class="validar" type="submit" value="Validar">
-
+    </div>
+    <div> <input class="controls" type="text" name="numero_tarjeta" id="numero_tarjeta" placeholder="Número de la tarjeta" minlength="16" maxlength="16" required></div>
+    <div><input class="controls" type="month" name="fv" min="2022-01" max="2030-12" value="2022-07" placeholder="Fecha de vencimiento">
+    </div>
+    <div><input class="controls" type="text" name="cvv" id="cvv" minlength="3" maxlength="3" placeholder="CVV"> </div>
+    <div><input class="pagar" type="submit" id="pagar" value="Pagar">
+    </div>
   </form>
 
-</section>
-
-  </article>
-<main>
-
-
- 
-  
+</section> 
 </main>
  
 
- 
 
 <script src="index.js" type="module"></script>
-<footer>@ourztore</footer>
+<footer>
+  <div class="redes"><p > Contacto: |<i class="telefono"></i> 3507076600  |<i class="corre_electronico"></i> ourztore@gmail.com  |<i class="instagram">@ourztore  </i></p> </div>
+  </footer>
 </body>
 
 </html>
