@@ -1,4 +1,4 @@
-import validator from './validator.js';
+import { maskify } from "./validator.js";
 
 //cambio de catalogo a tarjeta y viceversa//
 
@@ -25,20 +25,16 @@ let catalogo=document.getElementById ("#catalogo")
 
  //obtengo la información del campo de #de tarjeta y pongo la mascara//
  
- let validar1= document.getElementById("pagar")
- validar1.addEventListener("click", botonPagar)
+const tarjetaNumero = document.querySelector("#numero_tarjeta");
+const resultado = console.log(tarjetaNumero);
 
- function botonPagar(){
-    let creditCardNumber=document.getElementById("numero_tarjeta").value;
+tarjetaNumero.addEventListener("keyup", function(event){
+    let creditCardNumber = event.currentTarget.value;
+    //console.log(resultado) = maskify(creditCardNumber);
+})
+
+
  
-    if(numero_tarjeta.value == "") {
-        alert("Ingresa el número de tarjeta de crédito");
-    }
-    else {
-        let mostrarCuatro = maskify(creditCardNumber);
-        cardNumber.value = mostrarCuatro;
-    }
- }
  
 
 //console.log(validator);//

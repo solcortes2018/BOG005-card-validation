@@ -1,17 +1,17 @@
-const validator = {};
+//const validator = {};
 
+export function maskify(creditCardNumber) {
 
-
-function maskify(creditCardNumber) {
-
-  if (creditCardNumber.length > 4) {
-    let numeroOculto = "#".repeat(creditCardNumber.length - 4);
-    let mostrar=creditCardNumber.substring=(creditCardNumber.length -4);
-    let mascara=numeroOculto + mostrar;
-    return mascara;}
-    else{
-      return creditCardNumber;
+  if (creditCardNumber.length > 4){
+    const cantidadNumeros = creditCardNumber.split("");
+    for (i=0; i <cantidadNumeros.length -4; i++ ){
+      cantidadNumeros[i]= "#";
+      return cantidadNumeros.join("");
     }
+  }
+  else{
+    return creditCardNumber;
+  }
 
 }
-export default validator;
+//export default validator;
