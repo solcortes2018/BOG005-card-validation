@@ -53,18 +53,25 @@
 
 <!--FORMULARIO TARJETA-->
 <section id="container_formulario">
-  <form action="" class="form">
+  <form action="" class="formCard">
     <h2>INGRESA LOS DATOS</h2>
     <div>
-    <input class="controls" type="text" name="Nombre" id="nombre" placeholder="Nombre">
+     <input class="controls" type="text" name="Nombre" id="nombre" placeholder="Nombre">
     </div>
-    <div> <input class="controls" type="text" name="numero_tarjeta" id="numero_tarjeta" placeholder="Número de la tarjeta" minlength="16" maxlength="16" required></div>
-    <div><input class="controls" type="month" name="fv" min="2022-01" max="2030-12" value="2022-07" placeholder="Fecha de vencimiento">
+     <div> <input class="controls" type="text" name="numero_tarjeta" id="numero_tarjeta" placeholder="Número de la tarjeta" minlength="16" maxlength="16" required></div>
+     <div><input class="controls" type="month" name="fv" min="2022-01" max="2030-12" value="2022-07" placeholder="Fecha de vencimiento">
     </div>
-    <div><input class="controls" type="text" name="cvv" id="cvv" minlength="3" maxlength="3" placeholder="CVV"> </div>
-    <div><input class="pagar" type="submit" id="pagar" value="Pagar">
+     <div><input class="controls" type="text" name="cvv" id="cvv" minlength="3" maxlength="3" placeholder="CVV"> </div>
+     <div><input class="pagar" type="submit" id="pagar" value="Pagar">
     </div>
   </form>
+  <section class="respuesta">
+    <div>
+      <p class="nombre">Nombre</p>
+      <p class="numeroT">Numero de tarjeta</p>
+      <p class="fe">Fecha de vencimiento</p>
+    </div>
+  </section>
 
 </section> 
 </main>

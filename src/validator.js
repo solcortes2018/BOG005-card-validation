@@ -1,17 +1,23 @@
-//const validator = {};
+const validator = {
+  maskify: function (creditCardNumber) {
 
-export function maskify(creditCardNumber) {
 
-  if (creditCardNumber.length > 4){
-    const cantidadNumeros = creditCardNumber.split("");
-    for (i=0; i <cantidadNumeros.length -4; i++ ){
-      cantidadNumeros[i]= "#";
+    if (creditCardNumber.length > 4) {
+      const cantidadNumeros = creditCardNumber.split("");
+      for (let i = 0; i < cantidadNumeros.length - 4; i++) {
+        cantidadNumeros[i] = "#";
+      }
+      console.log(cantidadNumeros);
       return cantidadNumeros.join("");
     }
-  }
-  else{
-    return creditCardNumber;
+    else {
+      return creditCardNumber;
+    }
+
+
+
   }
 
+
 }
-//export default validator;
+export default validator;
