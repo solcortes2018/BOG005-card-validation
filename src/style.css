@@ -1,100 +1,99 @@
-
-*{margin: 0;
+* {
+    margin: 0;
     padding: 0;
 }
 
-header{
+header {
     width: 100%;
-    margin-bottom:10px;
+    margin-bottom: 10px;
     background: url(inicio.oz.png);
     overflow: hidden;
     font-size: large;
 
 }
 
- .container_inicio p {
+.container_inicio p {
     text-align: center;
     font-family: "calibri";
     font-size: 60px;
     transition: 0.6s;
-    color:#151a35
-    
- }
+    color: #151a35
+}
 
- .container_inicio h1 {
+.container_inicio h1 {
     padding-top: 10px;
     padding-left: 15px;
     text-shadow: #886971 5px 1px 4px;
     text-align: center;
     font-size: 60px;
     transition: 0.6s;
-    color:#151a35
+    color: #151a35
+}
 
- }
-
-  header nav {
+header nav {
     position: relative;
-    display: flex;  
+    display: flex;
     justify-content: right;
     line-height: 200px;
-  }
-  
-  header nav a {
+}
+
+header nav a {
     position: relative;
     margin: 0 15px;
     text-decoration: none;
-    color:#151a35;
+    color: #151a35;
     letter-spacing: 2px;
     transition: 0.6s;
     padding: 0px 2px;
-    
-  }
-  
-  
-  body{
+
+}
+
+
+body {
     background: #e2e2e2;
     min-height: 200vh;
-    font-family:'Calibri' ;
-    
-  }
+    font-family: 'Calibri';
 
-#items{
+}
+
+#items {
     text-align: center;
     font-family: "calibri";
-    display:flex;
+    display: flex;
     justify-content: center;
     line-height: 20px;
-    
+
 
 }
 
-#items h1{
+#items h1 {
     font-family: "calibri";
-    
+
 
 }
-.item1{
+
+.item1 {
     padding: auto;
-    letter-spacing:1;
+    letter-spacing: 1;
     word-spacing: 1;
     border: 1px dotted #151a35;
     width: 60px;
     margin: auto;
     padding: 10%;
-  
+
 }
 
-.item2{
+.item2 {
     padding: auto;
     letter-spacing: 1;
     word-spacing: 1;
     border: 3px dotted #151a35;
     width: 50px;
     margin: auto;
-    padding:10%;
+    padding: 10%;
 }
 
-.item3{
+.item3 {
     padding: auto;
     letter-spacing: 1;
     word-spacing: 1;
@@ -102,27 +101,29 @@ header{
     width: 50px;
     margin: auto;
     padding: 10%;
-    
+
 }
 
 
 
 
-.nombre_articulo{
+.nombre_articulo {
     display: flex;
     justify-content: center;
     color: #151a35;
-    
+
 
 
 }
-.costo{
+
+.costo {
     display: flex;
     justify-content: center;
     color: #151a35;
 }
-#agregar1{
-    background-color:#ba9a96;
+
+#agregar1 {
+    background-color: #ba9a96;
     height: 40px;
     border-radius: 5px;
     font-family: "calibri";
@@ -130,8 +131,8 @@ header{
     padding: 4px 4px 4px 4px;
 }
 
-#agregar2{
-    background-color:#ba9a96;
+#agregar2 {
+    background-color: #ba9a96;
     height: 40px;
     border-radius: 5px;
     font-family: "calibri";
@@ -139,8 +140,8 @@ header{
     padding: 4px 4px 4px 4px;
 }
 
-#agregar3{
-    background-color:#ba9a96;
+#agregar3 {
+    background-color: #ba9a96;
     height: 40px;
     border-radius: 5px;
     font-family: "calibri";
@@ -148,7 +149,7 @@ header{
     padding: 4px 4px 4px 4px;
 }
 
-#container_formulario{
+#container_formulario {
     width: 400px;
     background: #151a35;
     padding: 30px;
@@ -158,12 +159,12 @@ header{
     font-family: "calibri";
     color: #ba9a96;
     display: none;
-    
+
 }
 
 
 
-.controls{
+.controls {
     width: 100%;
     background: #ba9a96;
     padding: 10px;
@@ -174,33 +175,34 @@ header{
     font-size: 18px;
 }
 
-.pagar{
+.pagar {
     width: 100%;
-    background: #886971 ;
+    background: #886971;
     border: none;
     padding: 12px;
     color: #151a35;
     margin: 16px 0;
     font-size: 16px;
-    
+
 }
 
 
 
-footer{
+footer {
     background: url(inicio.oz.png);
     margin-top: 57px;
-    height: 55px;  
+    height: 55px;
     width: 100%;
-    
+
 }
-.redes{
+
+.redes {
     font-family: "calibri";
     font-size: 16px;
     padding-top: 15px;
     padding-left: 15px;
     text-align: center;
     font-weight: bold;
-   letter-spacing: 5px;
-   justify-content: space-between;
+    letter-spacing: 5px;
+    justify-content: space-between;
 }

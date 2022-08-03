@@ -8,8 +8,8 @@
 </head>
 
 <body>
-
-  <header> 
+<!--Inicio-->
+  <header>
     <div class="container_inicio">
       <img class="logo" src="logo.png" width="150px" alt="150px">
       <h1>BIENVENIDOS A OURZTORE</h1>
@@ -20,67 +20,74 @@
       <a href id="#catalogo">Catálogo</a>
       <a href="#Contactanos">Contactanos</a>
     </nav>
-      <!--<button class="inicio">Catálogo</button>-->
   </header>
 
- 
 
-<main>
-<section id="items">
- <!--ARTICULOS A LA VENTA-->
-    <div class="item1" >
-      <img src="articulo1.jpg" class="articulo1" width="100px" alt="100px">
-      <h2 class="nombre_articulo">Aretes espiral hojas</h2>
-      <p class="costo">$29.000</p>
-      <br>
-      <button id="agregar1">Agregar</button>
-    </div>
-    <div class="item1" >
-      <img src="articulo2.jpg" class="articulo1" width="100px" alt="100px">
-      <h2 class="nombre_articulo">Topitos astronautas</h2>
-      <p class="costo">$19.000</p>
-      <br>
-      <button id="agregar2">Agregar</button>
-    </div>
-    <div class="item1" >
-      <img src ="articulo3.jpg" class="articulo1" width="100px" alt="100px">
-      <h2 class="nombre_articulo">Ear cuff doble</h2>
-      <p class="costo">$23.000</p>
-      <br>
-      <button id="agregar3">Agregar</button>
+
+  <main>
+    <section id="items">
+      <!--ARTICULOS A LA VENTA-->
+      <div class="item1">
+        <img src="articulo1.jpg" class="articulo1" width="100px" alt="100px">
+        <h2 class="nombre_articulo">Aretes espiral hojas</h2>
+        <p class="costo">$29.000</p>
+        <br>
+        <button id="agregar1">Agregar</button>
       </div>
-</section>
+      <div class="item1">
+        <img src="articulo2.jpg" class="articulo1" width="100px" alt="100px">
+        <h2 class="nombre_articulo">Topitos astronautas</h2>
+        <p class="costo">$19.000</p>
+        <br>
+        <button id="agregar2">Agregar</button>
+      </div>
+      <div class="item1">
+        <img src="articulo3.jpg" class="articulo1" width="100px" alt="100px">
+        <h2 class="nombre_articulo">Ear cuff doble</h2>
+        <p class="costo">$23.000</p>
+        <br>
+        <button id="agregar3">Agregar</button>
+      </div>
+    </section>
 
-<!--FORMULARIO TARJETA-->
-<section id="container_formulario">
-  <form action="" class="formCard">
-    <h2>INGRESA LOS DATOS</h2>
-    <div>
-     <input class="controls" type="text" name="Nombre" id="nombre" placeholder="Nombre">
-    </div>
-     <div> <input class="controls" type="text" name="numero_tarjeta" id="numero_tarjeta" placeholder="Número de la tarjeta" minlength="16" maxlength="16" required></div>
-     <div><input class="controls" type="month" name="fv" min="2022-01" max="2030-12" value="2022-07" placeholder="Fecha de vencimiento">
-    </div>
-     <div><input class="controls" type="text" name="cvv" id="cvv" minlength="3" maxlength="3" placeholder="CVV"> </div>
-     <div><input class="pagar" type="submit" id="pagar" value="Pagar">
-    </div>
-  </form>
-  <section class="respuesta">
-    <div>
-      <p class="nombre">Nombre</p>
-      <p class="numeroT">Numero de tarjeta</p>
-      <p class="fe">Fecha de vencimiento</p>
-    </div>
-  </section>
+    <!--FORMULARIO TARJETA-->
+    <section id="container_formulario">
+      <form action="" class="formCard">
+        <h2>INGRESA LOS DATOS</h2>
+        <div>
+          <input class="controls" type="text" name="Nombre" id="nombre" placeholder="Nombre">
+        </div>
+        <div> <input class="controls" type="text" name="numero_tarjeta" id="numero_tarjeta"
+            placeholder="Número de la tarjeta" minlength="16" maxlength="16" required></div>
+        <div><input class="controls" type="month" name="fv" min="2022-01" max="2030-12" value="2022-07"
+            placeholder="Fecha de vencimiento">
+        </div>
+        <div><input class="controls" type="text" name="cvv" id="cvv" minlength="3" maxlength="3" placeholder="CVV">
+        </div>
+        <div><input class="pagar" type="submit" id="pagar" value="Pagar">
+        </div>
+        
+        
+      </form>
+      <section class="respuesta">
+        <div>
+          <p class="nombreT">Nombre</p>
+          <p class="numeroT">Numero de tarjeta</p>
+          <p id="esValido" class="mensaje"></p>
+        </div>
+      </section>
 
-</section> 
-</main>
- 
+    </section>
+  </main>
 
 
-<script src="index.js" type="module"></script>
-<footer>
-  <div class="redes"><p > Contacto: |<i class="telefono"></i> 3507076600  |<i class="corre_electronico"></i> ourztore@gmail.com  |<i class="instagram">@ourztore  </i></p> </div>
+
+  <script src="index.js" type="module"></script>
+  <footer>
+    <div class="redes">
+      <p> Contacto: |<i class="telefono"></i> 3507076600 |<i class="corre_electronico"></i> ourztore@gmail.com |<i
+          class="instagram">@ourztore </i></p>
+    </div>
   </footer>
 </body>
 
