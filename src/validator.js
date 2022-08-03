@@ -2,33 +2,33 @@ const validator = {
   //validador
   isValid: function (creditCardNumber) {
     //pasar el # a un array en orden inverso
-    let arrayReversed = creditCardNumber.split('').reverse();
-    for (let i = 0; i < arrayReversed.length; i++) {
+    let array_invertido = creditCardNumber.split('').reverse();
+    for (let i = 0; i < array_invertido.length; i++) {
       if (i % 2 != 0) {
         //multiplico la segunda posicion*2
-        arrayReversed[i] = arrayReversed[i] * 2;
-        if (arrayReversed[i] > 9) {
-          let getDigits = arrayReversed[i].toString().split('');
-          let addDigits = 0;
-          getDigits.forEach(function (element) {
-            addDigits += parseInt(element);
+        array_invertido[i] = array_invertido[i] * 2;
+        if (array_invertido[i] > 9) {
+          let digitos = array_invertido[i].toString().split('');
+          let agregar = 0;
+          digitos.forEach(function (element) {
+            agregar += parseInt(element);
           });
-          arrayReversed[i] = addDigits;
+          array_invertido[i] = agregar;
         }
         else {
-          arrayReversed[i] = arrayReversed[i] * 1;
+          array_invertido[i] = array_invertido[i] * 1;
         }
       }
       else {
-        arrayReversed[i] = arrayReversed[i] * 1;
+        array_invertido[i] = array_invertido[i] * 1;
       }
     }
 
-    let addTotal = 0;
-    arrayReversed.forEach(function (value) {
-      addTotal += value;
+    let total = 0;
+    array_invertido.forEach(function (value) {
+      total += value;
     });
-    let residue = addTotal % 10;
+    let residue = total % 10;
 
     if (residue == 0) {
       return true;
