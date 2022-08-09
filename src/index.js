@@ -28,7 +28,7 @@ function mostrarCatalogo() {
 
 function validacion() {
    let validation = validator.isValid(creditCardNumber.value);
-   if (validation == true) {
+   if (validation == true && creditCardNumber.value != 0) {
       alert('Transacción Aprobada ¡Gracias por tu compra!') ;
    }
    else {
